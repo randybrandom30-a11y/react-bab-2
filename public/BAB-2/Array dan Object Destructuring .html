@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mahasiswa = ['Rendy', 'Yendra', 'Valen'];
+        let [mhs1, mhs2, mhs3] = mahasiswa;
+
+        console.log(mhs1);
+        console.log(mhs2);
+        console.log(mhs3);
+
+        const dataMahasiswa = () => {
+            return {
+                nama: 'Rendy',
+                umur: 20,
+                Jurusan: 'Informatika'}
+        }
+        let {nama, umur, Jurusan} = dataMahasiswa();
+
+        console.log(nama);
+        console.log(umur);
+
+
+        const dataPelajar = () => {
+            return {
+                nama1: 'Yendra',
+                umur1: 21,
+                Jurusan1: 'Sistem Informasi'}
+        }
+        let {nama1: namaPelajar, umur1: umurPelajar, Jurusan1: jurusanPelajar} = dataPelajar();
+        console.log(namaPelajar);
+        console.log(umurPelajar);
+        console.log(jurusanPelajar);
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const getUser = () => {
+        //     setTimeout(() => {
+        //         console.log("processing done!");
+        //         return {user: "Rnndy"};
+        //     }, 2000);
+        // }
+
+        // console.log("start...")
+        // console.log(getUser());
+        // console.log("finish")
+
+
+
+        // JavaScript Promise
+        // const getUserPromise = () => {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve("rendy");
+        //             reject("something error....")
+        //         }, 2000);
+        //     })
+        // }
+        // console.log("start...")
+        // getUserPromise().then((user) => console.log(user))
+        // .catch((error) => console.log(error));
+        // console.log("finish")
+
+
+
+        // Async - Await
+         const getUserPromise = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("rendy");
+                    reject("something error....")
+                }, 2000);
+            })
+        }
+
+        const tryGetName = async () => {
+            let userName = await getUserPromise();
+            console.log(userName);
+        };
+
+        console.log("start...")
+        tryGetName();
+        console.log("finish")
+    </script>
+</body>
+</html>

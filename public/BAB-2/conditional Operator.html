@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1
+        const pen = "ena Kecil"
+        const Hasil = pen == "Pena Besar" ? "Kamu Benar" : "Kamu salah"    
+        console.log(Hasil);
+
+        // 2
+        const Nilai = 100
+        const Hasil1 = Number.isInteger(Nilai) ? "Nilai adalah Integer" : "Nilai Bukan Integer"
+        console.log(Hasil1);
+
+        const Hasil2 = (typeof Nilai === "string") ? "Valid" : "Sonde Valid"
+        console.log(Hasil2);
+
+        // 3
+        const Nilai2 = 50
+        const HAsil3 = `<div class ="${Number.isInteger(Nilai2) ? 'Valid' : 'Sonde Valid'}">`;
+        console.log(HAsil3);
+    </script>
+</body>
+</html>

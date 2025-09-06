@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [10, 20, 30];
+        let arr2 = [40, 50, 60];
+
+
+        let arr3 = [...arr1, ...arr2]; 
+        console.log(arr3);
+
+        let arr4 = [...arr1, 40, 50, 60, 70, 80];
+        console.log(arr4);
+
+
+
+        let arr5 = [80, 70, 60, 50, 40,...arr1]
+        console.log(arr5);
+
+        let mahasiswa = {
+        nama:'Rendy',
+        umur: 17,
+        Jurusan: 'Teknik Informatika',
+        }
+
+        let mahasiswa2 = {
+            ...mahasiswa,
+            umur: 20,
+            nama: 'Daryn',
+            
+        }
+
+        console.log(mahasiswa2);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Handphone {
+            constructor (merek, warna) {
+                this.merek = merek;
+                this.warna = warna;
+            }
+            hidupkan () {
+                return `Hidupkan handphone ${this.merek} warna ${this.warna}`;
+            }
+        }
+
+        let hprendy = new Handphone ('Samsung', 'Hitam');
+        console.log(hprendy.merek);
+        console.log(hprendy.warna);
+        console.log(hprendy.hidupkan());
+
+        // tanpa class
+        let hpyendra = {
+            merek1: 'Xiaomi',
+            warna2: 'Merah',
+            hidupkanHandphone: function() {
+                return `Hidupkan handphone ${this.merek1} warna ${this.warna2}`;
+            }
+        }
+
+        console.log(hpyendra.merek1);
+        console.log(hpyendra.warna2);
+        console.log(hpyendra.hidupkanHandphone());
+
+        //  penulisan method di dalam object juga bisa dibuat dari arrow notation:
+
+
+        let hpvalen = {
+            merek2: 'Iphone',
+            warna3: 'Putih',
+            hidupkanHandphone2 : () => `Hidupkan handphone ${hpvalen.merek2} warna ${hpvalen.warna3}`
+        }
+
+        console.log(hpvalen.merek2);
+        console.log(hpvalen.warna3);
+        console.log(hpvalen.hidupkanHandphone2());
+
+        // object_this
+        let laptopPakbudy = {
+            merek: 'Asus',
+            warna: 'Silver',
+            r () {return this},
+            o : () => this
+        }
+
+        console.log(laptopPakbudy.r());
+        console.log(laptopPakbudy.o());
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Method forEach() dan map()</h1>
+    <div id="root"></div>
+    <button onclick="gacorOm()">GACOR OM</button>
+
+    <script>
+        let ren = ['Ren', 'Rin', 'Ran', 'Ron'];
+        let ran = [13, 14, 16, 18]; 
+        ranKuadrat = [];
+        let ran1Kuadrat = ran.map(
+            (val) => val * val
+        );
+
+        ren.forEach(function(val, key){
+            console.log(`nilai array di index ${key} adalah ${val}`);
+        })
+
+        ren.forEach(
+            (val, key) => console.log(`nilai array di index ${key} adalah ${val}`
+        ));
+
+        ran.forEach(
+            (val) => ranKuadrat.push(val * val)
+        );
+        console.log(ranKuadrat);
+
+
+        const Pelajar = [
+            {
+                nama: "Rendy",
+                umur:20,
+                jurusan: "RPL"
+            }
+            ,
+            {
+                nama: "Rina",
+                umur:19,
+                jurusan: "TKJ"
+            }
+            ,
+            {
+                nama: "Rani",
+                umur:21,
+                jurusan: "RPL"
+            }
+            ,
+            {
+                nama: "Roni",
+                umur:20,
+                jurusan: "TKJ"
+            }  
+        ];
+            const prosesPelajar = (Pelajar) => 
+            `${Pelajar.nama} berumur ${Pelajar.umur} jurusan ${Pelajar.jurusan}`;
+
+            const formatPelajar = Pelajar.map(prosesPelajar);
+
+            const gacorOm = () => {
+                document.getElementById('root').innerHTML = formatPelajar.join('');
+            }
+    </script>
+</body>
+</html>

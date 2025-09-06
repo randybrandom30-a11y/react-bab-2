@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  1
+        const kuadrat =function (c) {
+            return c * c;
+        }
+
+    console.log("hasil dari Kuadrat 12 adalah " + (kuadrat(12)));
+
+    // 2
+            //  1
+        const kuadrat1 =  (c) => {
+            return c * c;
+        }
+
+    console.log("hasil dari Kuadrat 12 adalah " + (kuadrat(12)))
+
+    // 3
+    const kuadrat2 = c => c * c;
+    console.log("hasil dari Kuadrat 12 adalah " + (kuadrat(12)))
+
+    // 4
+    const generate = () => Math.floor(Math.random() * 100) + 1;
+    console.log(generate());
+
+    // 5
+    const generateRandowm = (start, end) =>
+    Math.floor(Math.random() * (end - start + 1)) + start;
+
+
+    console.log(generateRandowm(10, 20));
+
+    // 6
+    const generateRandom = (start = 1, end = 10) =>
+    Math.floor(Math.random() * (end - start + 1)) + start;
+
+    console.log(generateRandom());
+    console.log(generateRandom(5));
+    console.log(generateRandom(10, 20));
+    
+    </script>
+</body>
+</html>
